@@ -1,0 +1,7 @@
+faiss_cpu==1.11.0.post1
+fitz==0.0.1.dev2
+numpy==2.3.1
+Pillow==11.3.0
+timm==1.0.19
+torch==2.7.1
+torchvision==0.22.1
