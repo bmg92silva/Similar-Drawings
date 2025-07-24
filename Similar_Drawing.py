@@ -26,7 +26,6 @@ os.environ['OMP_NUM_THREADS'] = '1'
 MODEL_NAME = "timm/vit_small_patch14_dinov2.lvd142m"
 INDEX_PATH = "pdf_embeddings.index"
 METADATA_PATH = "pdf_metadata.json"
-UPLOAD_DIR = "uploaded_pdfs"
 IMAGES_DIR = "pdf_images"  # Directory to store small images
 SIMILARITY_THRESHOLD = 1e-7
 EMBED_DIM = 384
@@ -39,7 +38,6 @@ fitz.TOOLS.mupdf_display_warnings(False)
 fitz.TOOLS.reset_mupdf_warnings()
 
 # Create directories
-Path(UPLOAD_DIR).mkdir(exist_ok=True)
 Path(IMAGES_DIR).mkdir(exist_ok=True)
 
 class ConsoleRedirect:
@@ -873,8 +871,11 @@ def main():
     
     # Handle window closing to restore stdout
     def on_closing():
-        sys.stdout = sys.__stdout__  # Restore original stdout
+        sys.stdout = sys.__stdout__
+        root.quit()       
         root.destroy()
+        sys.exit(0)                 
+
     
     root.protocol("WM_DELETE_WINDOW", on_closing)
     root.mainloop()
