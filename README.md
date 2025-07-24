@@ -1,17 +1,7 @@
 # Similar Drawing - PDF Similarity Search Tool
 Desktop application for finding visually similar PDF documents using AI image embeddings. Built with Python, this tool helps you organize and search through large collections of PDF files based on visual content similarity.
 
-# Motivation
-With years of experience in metalworking and roles as a designer, estimator, and buyer, I understand the daily challenges of manufacturing. Success often comes from learning from past projects and real-world experience.
-* **For Mechanical Designers**: Upload a sketch or drawing and find similar parts from your archive. See how others solved similar problems and what approaches worked best.
-* **For Production Preparers**: Discover similar components and learn from proven manufacturing sequences, tooling setups, and process parameters that delivered results.
-* **For Estimators and Budgeters**: Improve pricing accuracy by referencing historical data. Find similar quoted parts, review actual costs, lead times, and margins to create more competitive and realistic estimates.
-* **For Buyers**: Rely on your supply chain history. Identify similar components and see which suppliers delivered quality on time and at what price—avoid past mistakes and strengthen supplier negotiations.
-* **For Production Analysts**: Understand how similar parts performed in production—cycle times, quality issues, rework rates—so you can make informed, data-driven decisions for new components.
-I'm not a programmer, but someone who learned Python and makes use of LLMs to develop some tools that help me at work, so please take that into account.
 
-
-![Python](https://img.shields.io/elds.io/unctionality**
 - **Visual PDF Search**: Find similar PDFs based on visual content using DINOv2 embeddings
 - **Batch Processing**: Upload and process multiple PDFs simultaneously
 - **Progress Tracking**: Monitor processing status with progress bars and console output
@@ -40,6 +30,18 @@ The application features a 3-tier duplicate detection system:
 - **Grid Layout**: Organized display of results in 3-column format
 - **Image Caching**: Efficient storage and retrieval of PDF thumbnails
 - **Responsive UI**: Resizable panels and scrollable content areas
+
+
+# Motivation
+With years of experience in metalworking and roles as a designer, estimator, and buyer, I understand the daily challenges of manufacturing. Success often comes from learning from past projects and real-world experience.
+* **For Mechanical Designers**: Upload a sketch or drawing and find similar parts from your archive. See how others solved similar problems and what approaches worked best.
+* **For Production Preparers**: Discover similar components and learn from proven manufacturing sequences, tooling setups, and process parameters that delivered results.
+* **For Estimators and Budgeters**: Improve pricing accuracy by referencing historical data. Find similar quoted parts, review actual costs, lead times, and margins to create more competitive and realistic estimates.
+* **For Buyers**: Rely on your supply chain history. Identify similar components and see which suppliers delivered quality on time and at what price—avoid past mistakes and strengthen supplier negotiations.
+* **For Production Analysts**: Understand how similar parts performed in production—cycle times, quality issues, rework rates—so you can make informed, data-driven decisions for new components.
+I'm not a programmer, but someone who learned Python and makes use of LLMs to develop some tools that help me at work, so please take that into account.
+
+
 
 ## 🛠️ Installation
 
@@ -70,7 +72,7 @@ pip install -r requirements.txt
 python Similar_Drawing.py
 ```
 
-## 🎯 Usage
+## Usage
 
 ### **Getting Started**
 1. **Launch the Application**: Run `python Similar_Drawing.py`
@@ -92,7 +94,7 @@ python Similar_Drawing.py
 - **Delete Individual Records**: Remove specific PDFs from the index
 - **Clear Database**: Reset the entire database (with confirmation)
 
-## 🔧 Technical Details
+## Technical Details
 
 ### **AI Model**
 - **Architecture**: Vision Transformer (ViT) with DINOv2
@@ -112,7 +114,7 @@ python Similar_Drawing.py
   ```
 
 
-## 📊 Duplicate Detection System
+## Duplicate Detection System
 
 | Detection Type | Method | Action | Example |
 |----------------|--------|--------|---------|
@@ -123,13 +125,13 @@ python Similar_Drawing.py
 
 
 
-## 🐛 Known Issues & Limitations
+## Known Issues & Limitations
 
 - **PDF Compatibility**: Some encrypted or corrupted PDFs may not process correctly
 - **Memory Usage**: Large batch processing may take long time
 - **Model Download**: First run requires downloading the DINOv2 model (~400MB)
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] Multi-page PDF analysis
 - [ ] Custom similarity thresholds
