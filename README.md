@@ -33,7 +33,7 @@ The application features a 3-tier duplicate detection system:
 
 
 # Motivation
-With years of experience in metalworking and roles as a designer, estimator, and buyer, I understand the daily challenges of manufacturing. Success often comes from learning from past projects and real-world experience.
+With years of experience in metalworking and roles as a designer, estimator, and buyer, I understand the daily challenges of manufacturing. A job well done often comes from learning from past project experiences. This project aims to make it easier to find old finished jobs that can help us accomplish our current work.
 * **For Mechanical Designers**: Upload a sketch or drawing and find similar parts from your archive. See how others solved similar problems and what approaches worked best.
 * **For Production Preparers**: Discover similar components and learn from proven manufacturing sequences, tooling setups, and process parameters that delivered results.
 * **For Estimators and Budgeters**: Improve pricing accuracy by referencing historical data. Find similar quoted parts, review actual costs, lead times, and margins to create more competitive and realistic estimates.
