@@ -43,7 +43,7 @@ I'm not a programmer, but someone who learned Python and makes use of LLMs to de
 
 
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 ```bash
